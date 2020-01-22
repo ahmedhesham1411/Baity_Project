@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Baity</string>
+    <string name="sign_up">تسجيل</string>
+    <string name="first_name">الاسم الاول</string>
+    <string name="last_name">الاسم الاخير</string>
+    <string name="email">البري الالكترونى</string>
+    <string name="phone_number">رقم الموبايل</string>
+    <string name="password">كلمة السر</string>
+    <string name="confirm_password">تأكيد كلمة السر</string>
+    <string name="sign_in">دخول</string>
+    <string name="user_name">اسم المستخددم</string>
+    <string name="type_your_user_name">اكتب اسم المستخدم</string>
+    <string name="login">دخول</string>
+    <string name="forgot_password"> نسيت كلمة السر ؟</string>
+    <string name="verification_code">كود التأكيد</string>
+    <string name="enter_your_code">ادخل الكود</string>
+    <string name="verify">تأكيد</string>
+    <string name="your_account_has_been_verified">تم تأكيد الحساب</string>
+    <string name="Verification_code">كود التأكيد</string>
+    <string name="Verificationcode">كود التأكيد</string>
+    <string name="Enter_your_code">ادخل الكود</string>
+    <string name="description">وصف</string>
+    <string name="home_description">المقاولات العامة ومواد البناء</string>
+    <string name="my_profile">حسابى</string>
+    <string name="about_us">عن الشركة</string>
+    <string name="my_favorite">مفضلاتى</string>
+    <string name="change_password">تغيير كلمة السر</string>
+    <string name="change_language">تغيير اللغة</string>
+    <string name="terms_and_conditions">الشروط و الاحكام</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="about_descriptio">Lorem Ipsum is simply dummy \n text of the printing and type \n industry Lorem Ipsum has been \n the
+        industry\'s standard dummy \n text ever since the 1500s when \n an unknown printer took \n a galley of type and scrambled \n it
+to make a type specimen book\n It has survived not only five \n centuries but also the leap into \n electronic </string>
+    <string name="setting">اعدادات</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="www_baity_com">www.Baity.com</string>
+    <string name="_01111111111">01111111111</string>
+    <string name="ektrahat">سعداء لتلقى اقتراحاتك</string>
+    <string name="arabic">عربى</string>
+    <string name="mobile_number">رقم الموبايل</string>
+    <string name="reset">استرجاع</string>
+    <string name="reset_password">استرجاع كلمة السر</string>
+    <string name="forget_password">نسيت كلمة السر</string>
+    <string name="new_password">كلمة السر</string>
+    <string name="confirm_new_password">تأكيد كلمة السر</string>
+    <string name="submit">تأكيد</string>
+    <string name="old_password">كلمة السر القديمة</string>
+    <string name="change_pssword_succesfully">تم تغيير كلمة السر</string>
+    <string name="done">تم</string>
+    <string name="reset_password_succesfully">تم</string>
+    <string name="what_is_lorem_ipsum">What is Lorem Ipsum?</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting">Lorem Ipsum is simply dummy text of the printing and typesetting</string>
+    <string name="no">لا</string>
+    <string name="yes">نعم</string>
+    <string name="save">حفظ</string>
+    <string name="english">عربى</string>
+    <string name="type_your_password">اكتب كلمة السر</string>
+    <string name="or_n_sign_up_using">او \n تسجيل الدخول باستخدام</string>
+    <string name="don_t_have_an_account_n_signup">ليس لديك حساب ؟ \n تسجيل الدخول</string>
+    <string name="i_agree_to_baity_s_terms_of_use">أوافق على الشروط و الاحكام</string>
+    <string name="nameerror">الاسم غير صحيح</string>
+    <string name="emailerror">الايميل غير صحيح</string>
+    <string name="passworderror">لا تقل عن 8 احرف</string>
+    <string name="mobileerror">رقم غير صحيح</string>
+    <string name="match_password">كلمة سر غير صحيحة</string>
+
+</resources>

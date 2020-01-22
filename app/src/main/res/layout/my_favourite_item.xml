@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    android:orientation="horizontal"
+    android:layout_centerInParent="true">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_favourite"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/tasesat"
+        android:layout_marginStart="@dimen/_10ssp"/>
+
+    <Space
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <com.example.baity.Designs.MyTextViewBold
+            android:id="@+id/favourite_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/what_is_lorem_ipsum"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/white"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
+
+        <com.example.baity.Designs.MyTextViewBold
+            android:id="@+id/favourite_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/white"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

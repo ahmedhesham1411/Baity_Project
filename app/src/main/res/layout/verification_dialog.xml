@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"/>
+
+
+    <com.example.baity.Designs.MyTextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/your_account_has_been_verified"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"/>
+
+    <com.example.baity.Designs.MyButtonBold
+        android:id="@+id/btnReset"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/btn"
+        android:text="@string/reset_password"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
