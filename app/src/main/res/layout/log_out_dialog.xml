@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Are you sure you want to log out ?"
+        android:text="@string/are_you_sure_you_want_to_log_out"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="@dimen/_14ssp"/>

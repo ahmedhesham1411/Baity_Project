@@ -1,27 +1,22 @@
 package com.example.baity.Activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
-import android.preference.PreferenceManager;
-import android.widget.ProgressBar;
-import android.widget.Toast;
 
+import com.example.baity.Activities.Home.Home;
+import com.example.baity.Activities.Login.LogIn;
 import com.example.baity.R;
+import com.example.baity.Utils.Preferences;
 
 import pl.droidsonroids.gif.GifImageView;
 
-import static com.example.baity.Activities.LocaleManeger.ARABIC;
-import static com.example.baity.Activities.LocaleManeger.ENGLISH;
 import static com.example.baity.Activities.LocaleManeger.getLanguagePref;
 
-public class SplashScreen extends BaseActivity {
+public class SplashScreen extends BaseActivity  {
     private GifImageView gifImageView;
-    private ProgressBar progressBar;
+    private String Token;
+    Preferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,20 +26,27 @@ public class SplashScreen extends BaseActivity {
         getLanguagePref(this);
 
         gifImageView = findViewById(R.id.gifImageView);
-        //progressBar = (ProgressBar) findViewById(R.id.progressBar);
-        //progressBar.setVisibility(progressBar.VISIBLE);
+        Token = preferences.GetToken(this);
+        if (Token == "default"){
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent mainIntent = new Intent(SplashScreen.this, LogIn.class);
+                    startActivity(mainIntent);
+                    finish();
+                }
+            }, 4500);
+        }
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-
-                Intent mainIntent = new Intent(SplashScreen.this, LogIn.class);
-                startActivity(mainIntent);
-                finish();
-            }
-        }, 4500);
-
-
-
+        else {
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent mainIntent = new Intent(SplashScreen.this, Home.class);
+                    startActivity(mainIntent);
+                    finish();
+                }
+            }, 4500);
+        }
     }
 }

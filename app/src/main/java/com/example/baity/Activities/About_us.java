@@ -22,6 +22,7 @@ public class About_us extends BaseActivity {
             @Override
             public void onClick(View v) {
                 onBackPressed();
+                finish();
             }
         });
     }

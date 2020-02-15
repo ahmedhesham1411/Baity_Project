@@ -1,7 +1,6 @@
 package com.example.baity.Activities;
 
 import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.LinearLayoutCompat;
 
@@ -12,9 +11,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.baity.Activities.Change_password.Change_password;
+import com.example.baity.Activities.Login.LogIn;
+import com.example.baity.Activities.MyFavourite.My_favourite;
+import com.example.baity.Activities.Profile.MyProfile;
 import com.example.baity.Designs.MyButtonBold;
 import com.example.baity.Designs.MyTextViewBold;
 import com.example.baity.R;
+import com.example.baity.Utils.Preferences;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.Locale;
@@ -27,6 +31,7 @@ public class Setting extends BaseActivity {
     MyTextViewBold myProfile,aboutUs,contactUs,changeLanguage,changePassword,terms_and_conditions,myFavourite,logOut;
     LinearLayoutCompat layout_popup;
     MyButtonBold btnYes,btnNo;
+    Preferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +48,12 @@ public class Setting extends BaseActivity {
         terms_and_conditions = findViewById(R.id.terms_and_conditions);
         myFavourite = findViewById(R.id.my_favourirte);
         logOut = findViewById(R.id.logOut);
+
+        String userState = preferences.Get_User_State(this);
+        if (userState.equals("oUser")){
+            myProfile.setVisibility(View.GONE);
+            changePassword.setVisibility(View.GONE);
+        }
 
         changeLanguage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,10 +86,12 @@ public class Setting extends BaseActivity {
                 startActivity(intent);
             }
         });
+
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
+                finish();
             }
         });
 
@@ -87,7 +100,7 @@ public class Setting extends BaseActivity {
         changePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Change_password.class);
+                Intent intent = new Intent(getApplicationContext(), Change_password.class);
                 startActivity(intent);
             }
         });
@@ -103,7 +116,7 @@ public class Setting extends BaseActivity {
         myFavourite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),My_favourite.class);
+                Intent intent = new Intent(getApplicationContext(), My_favourite.class);
                 startActivity(intent);
             }
         });
@@ -165,7 +178,8 @@ public class Setting extends BaseActivity {
             @Override
             public void onClick(View v) {
                 alertDialog.dismiss();
-                Intent intent = new Intent(getApplicationContext(),LogIn.class);
+                preferences.Clear(getApplicationContext());
+                Intent intent = new Intent(getApplicationContext(), LogIn.class);
                 startActivity(intent);
                 finish();
             }
@@ -177,6 +191,8 @@ public class Setting extends BaseActivity {
             }
         });
     }
+
+
 
     private void setNewLocale(Context mContext, @LocaleManeger.LocaleDef String language) {
         LocaleManeger.setNewLocale(getApplicationContext(), language);

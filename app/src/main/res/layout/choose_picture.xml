@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_25sdp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"/>
+
+    <com.example.baity.Designs.MyTextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/image_source"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"/>
+
+    <com.example.baity.Designs.MyTextViewNormal
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/please_choose_an_image_source"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_12ssp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_10sdp"
+        />
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            />
+
+        <com.example.baity.Designs.MyTextViewNormal
+            android:id="@+id/btnGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gallery"
+            android:textSize="@dimen/_16ssp"
+            android:layout_gravity="center"
+            android:textColor="@color/gray"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            />
+
+        <com.example.baity.Designs.MyTextViewNormal
+            android:id="@+id/btnCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/camera"
+            android:textSize="@dimen/_16ssp"
+            android:layout_gravity="center"
+            android:textColor="@color/gray"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            />
+
+        <com.example.baity.Designs.MyTextViewNormal
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textSize="@dimen/_16ssp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_10sdp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>

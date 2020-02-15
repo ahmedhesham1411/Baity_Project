@@ -22,6 +22,7 @@ public class Terms_and_conditions extends BaseActivity {
             @Override
             public void onClick(View v) {
                 onBackPressed();
+                finish();
             }
         });
     }

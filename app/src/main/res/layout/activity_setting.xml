@@ -68,13 +68,11 @@
                 android:layout_height="wrap_content"
                 android:text="@string/my_profile"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_16ssp"/>
+                android:textSize="@dimen/_16ssp"
+                android:visibility="visible"
+                android:layout_marginBottom="@dimen/_20sdp"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_20sdp"/>
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
@@ -178,12 +176,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/change_password"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_16ssp"/>
+                android:textSize="@dimen/_16ssp"
+                android:visibility="visible"
+                android:layout_marginBottom="@dimen/_20sdp"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_20sdp"/>
+
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"

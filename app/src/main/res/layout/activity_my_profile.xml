@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.MyProfile"
+    tools:context=".Activities.Profile.MyProfile"
     tools:ignore="MissingDefaultResource">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -47,19 +47,19 @@
         android:gravity="center">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_image"
-            android:layout_width="@dimen/_100sdp"
-            android:layout_height="@dimen/_100sdp"
+            android:id="@+id/get_profile_image"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
             android:src="@drawable/backg" />
 
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_30sdp"/>
+            android:layout_height="@dimen/_50sdp"/>
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_50sdp"
             android:orientation="horizontal">
 
             <Space
@@ -72,18 +72,18 @@
                 android:text="@string/user_name"
                 android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:textSize="@dimen/_12ssp"/>
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="start"/>
 
             <Space
-                android:layout_width="@dimen/_30sdp"
+                android:layout_width="@dimen/_15sdp"
                 android:layout_height="match_parent"/>
 
             <com.example.baity.Designs.MyTextViewBold
                 android:id="@+id/profileUserName"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:layout_gravity="center"
-                android:background="@drawable/my_shape"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp"
                 android:paddingStart="@dimen/_20sdp"
@@ -93,11 +93,11 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_10sdp"/>
+            android:layout_height="@dimen/_20sdp"/>
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_50sdp"
             android:orientation="horizontal">
 
             <Space
@@ -110,18 +110,18 @@
                 android:text="@string/email"
                 android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:textSize="@dimen/_12ssp"/>
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="start"/>
 
             <Space
-                android:layout_width="@dimen/_30sdp"
+                android:layout_width="@dimen/_15sdp"
                 android:layout_height="match_parent"/>
 
             <com.example.baity.Designs.MyTextViewBold
                 android:id="@+id/profileEmail"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:layout_gravity="center"
-                android:background="@drawable/my_shape"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp"
                 android:paddingStart="@dimen/_20sdp"
@@ -131,12 +131,12 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_10sdp"/>
+            android:layout_height="@dimen/_20sdp"/>
 
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_50sdp"
             android:orientation="horizontal">
 
             <Space
@@ -147,20 +147,21 @@
                 android:layout_width="@dimen/_90sdp"
                 android:layout_height="wrap_content"
                 android:text="@string/phone_number"
+                android:layout_gravity="start"
                 android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:textSize="@dimen/_12ssp"/>
+                android:textSize="@dimen/_12ssp"
+                />
 
             <Space
-                android:layout_width="@dimen/_30sdp"
+                android:layout_width="@dimen/_15sdp"
                 android:layout_height="match_parent"/>
 
             <com.example.baity.Designs.MyTextViewBold
                 android:id="@+id/profilePhone"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:layout_gravity="center"
-                android:background="@drawable/my_shape"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp"
                 android:paddingStart="@dimen/_20sdp"
@@ -173,39 +174,7 @@
             android:layout_height="@dimen/_10sdp"/>
 
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <Space
-                android:layout_width="@dimen/_10sdp"
-                android:layout_height="match_parent"/>
-
-            <com.example.baity.Designs.MyTextViewBold
-                android:layout_width="@dimen/_90sdp"
-                android:layout_height="wrap_content"
-                android:text="@string/password"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
-                android:textSize="@dimen/_12ssp"/>
-
-            <Space
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="match_parent"/>
-
-            <com.example.baity.Designs.MyTextViewBold
-                android:id="@+id/profilePassword"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:layout_gravity="center"
-                android:background="@drawable/my_shape"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_12ssp"
-                android:paddingStart="@dimen/_20sdp"
-                />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
 
         <Space
             android:layout_width="match_parent"
@@ -217,7 +186,7 @@
             android:layout_height="@dimen/_40sdp"
             android:background="@drawable/btn"
             android:layout_gravity="center"
-            android:text="Edit"
+            android:text="@string/edit"
             android:textColor="@color/white"
             android:textSize="@dimen/_16ssp"
             android:textAllCaps="false"/>

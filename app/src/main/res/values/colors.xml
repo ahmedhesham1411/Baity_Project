@@ -8,4 +8,11 @@
     <color name="light_gray">#80CCCCCC</color>
     <color name="gray">#707070</color>
     <color name="dark_gray">#cccccc</color>
+    <color name="yelow">#FFCB27</color>
+    <color name="blue">#46B7EE</color>
+    <color name="dddddd">#693902</color>
+    <color name="darkBlue">#001272</color>
+
+
+
 </resources>

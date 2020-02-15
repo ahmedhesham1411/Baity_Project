@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.SignUp">
+    tools:context=".Activities.Register.SignUp">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
@@ -26,7 +26,8 @@
             android:layout_height="@dimen/_30sdp"
             android:id="@+id/btnBack"
             android:src="@drawable/ic_back_vector"
-            android:layout_marginTop="@dimen/_12sdp"/>
+            android:layout_marginTop="@dimen/_12sdp"
+            android:visibility="gone"/>
 
     </androidx.appcompat.widget.Toolbar>
 

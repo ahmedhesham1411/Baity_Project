@@ -22,7 +22,8 @@ public class Contact_Us extends BaseActivity {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
+               onBackPressed();
+               finish();
             }
         });
     }

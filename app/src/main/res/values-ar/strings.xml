@@ -28,9 +28,7 @@
     <string name="change_language">تغيير اللغة</string>
     <string name="terms_and_conditions">الشروط و الاحكام</string>
     <string name="logout">تسجيل الخروج</string>
-    <string name="about_descriptio">Lorem Ipsum is simply dummy \n text of the printing and type \n industry Lorem Ipsum has been \n the
-        industry\'s standard dummy \n text ever since the 1500s when \n an unknown printer took \n a galley of type and scrambled \n it
-to make a type specimen book\n It has survived not only five \n centuries but also the leap into \n electronic </string>
+    <string name="about_descriptio"> ما هو لوريم ايبسوم ؟  \n  لوريم ايبسوم هو نموذج افتراضي  \n يوضع في التصاميم لتعرض على العميل  \n  ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص \n من التصميم ويتم وضع النصوص النهائية\n  المطلوبة للتصميم ويقول البعض ان وضع \n النصوص التجريبية بالتصميم قد تشغل  \n المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.  </string>
     <string name="setting">اعدادات</string>
     <string name="contact_us">اتصل بنا</string>
     <string name="www_baity_com">www.Baity.com</string>
@@ -48,8 +46,8 @@ to make a type specimen book\n It has survived not only five \n centuries but al
     <string name="change_pssword_succesfully">تم تغيير كلمة السر</string>
     <string name="done">تم</string>
     <string name="reset_password_succesfully">تم</string>
-    <string name="what_is_lorem_ipsum">What is Lorem Ipsum?</string>
-    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting">Lorem Ipsum is simply dummy text of the printing and typesetting</string>
+    <string name="what_is_lorem_ipsum"> ما هو لوريم ايبسوم ؟</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه</string>
     <string name="no">لا</string>
     <string name="yes">نعم</string>
     <string name="save">حفظ</string>
@@ -63,5 +61,21 @@ to make a type specimen book\n It has survived not only five \n centuries but al
     <string name="passworderror">لا تقل عن 8 احرف</string>
     <string name="mobileerror">رقم غير صحيح</string>
     <string name="match_password">كلمة سر غير صحيحة</string>
+    <string name="are_you_sure_you_want_to_log_out">تسجيل الخروج ؟</string>
+    <string name="not_now">ليس الان</string>
+    <string name="rate">تقييم</string>
+    <string name="gallery">المعرض</string>
+    <string name="camera">الكاميرا</string>
+    <string name="choose_a_picture">اختر صورة</string>
+    <string name="search">بحث</string>
+    <string name="image_source">مصدر الصورة</string>
+    <string name="cancel">الغاء</string>
+    <string name="edit">تعديل</string>
+    <string name="add">حفظ</string>
+    <string name="please_choose_an_image_source">اختر مصدر الصورة</string>
+    <string name="error">خطأ</string>
+
+    <string name="facebook_app_id">124169602308128</string>
+    <string name="fb_login_protocol_scheme">53/I+okujUbsMEK4WMFFRgDIm9s=</string>
 
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.LogIn">
+    tools:context=".Activities.Login.LogIn">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
@@ -27,7 +27,8 @@
             android:layout_height="@dimen/_30sdp"
             android:id="@+id/btnBack"
             android:src="@drawable/ic_back_vector"
-            android:layout_marginTop="@dimen/_12sdp"/>
+            android:layout_marginTop="@dimen/_12sdp"
+            android:visibility="gone"/>
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -57,12 +58,12 @@
             android:textSize="@dimen/_12ssp" />
 
         <com.example.baity.Designs.MyEditTextBold
-            android:id="@+id/editUserName"
+            android:id="@+id/loginEmail"
             android:layout_width="@dimen/_220sdp"
             android:layout_height="@dimen/_40sdp"
             android:hint="@string/type_your_user_name"
             android:backgroundTint="@color/white"
-            android:textColorHint="@color/white"
+            android:textColorHint="@color/light_gray"
             android:paddingTop="@dimen/_15sdp"
             android:paddingStart="@dimen/_10sdp"
             android:textColor="@color/white"
@@ -81,12 +82,12 @@
             android:textSize="@dimen/_12ssp" />
 
         <com.example.baity.Designs.MyEditTextBold
-            android:id="@+id/editPassword"
+            android:id="@+id/loginPassword"
             android:layout_width="@dimen/_220sdp"
             android:layout_height="@dimen/_40sdp"
             android:hint="@string/type_your_password"
             android:backgroundTint="@color/white"
-            android:textColorHint="@color/white"
+            android:textColorHint="@color/light_gray"
             android:paddingTop="@dimen/_15sdp"
             android:paddingStart="@dimen/_10sdp"
             android:textColor="@color/white"
@@ -141,29 +142,58 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:gravity="center">
 
-            <androidx.appcompat.widget.AppCompatImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/facebook_image"
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/facebookbtn" />
+                android:layout_height="wrap_content">
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/faceBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/facebook_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/facebookbtn" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.AppCompatImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/twitter_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/twitterbtn" />
+                android:src="@drawable/twitterbtn"
+                android:visibility="gone"/>
 
-            <androidx.appcompat.widget.AppCompatImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/gmail_image"
+
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/gmailbtn" />
+                android:layout_height="wrap_content">
 
+                <com.google.android.gms.common.SignInButton
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/sign_in_button"
+                    android:visibility="gone"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/Google_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gmailbtn"
+                    android:visibility="visible"/>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -181,6 +211,10 @@
             android:gravity="center"
             android:textSize="@dimen/_12ssp"
            />
+
+
+
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 </FrameLayout>

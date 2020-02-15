@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.Edit_myProfile"
+    tools:context=".Activities.Profile_edit.Edit_myProfile"
     tools:ignore="MissingDefaultResource">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -54,16 +54,16 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profile_image"
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="@dimen/_100sdp"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
                 android:src="@drawable/backg" />
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_30sdp"
                 android:background="@drawable/plus"
-                android:layout_marginTop="@dimen/_70sdp"
-                android:layout_marginStart="@dimen/_75sdp"/>
+                android:layout_marginTop="@dimen/_80sdp"
+                android:layout_marginStart="@dimen/_95sdp"/>
 
         </FrameLayout>
 
@@ -93,8 +93,8 @@
                 android:layout_height="match_parent"/>
 
             <com.example.baity.Designs.MyEditTextNormal
-                android:id="@+id/edtUserName"
-                android:layout_width="@dimen/_150sdp"
+                android:id="@+id/edtUname"
+                android:layout_width="@dimen/_170sdp"
                 android:layout_height="@dimen/_30sdp"
                 android:layout_gravity="center"
                 android:background="@drawable/my_shape"
@@ -131,8 +131,8 @@
                 android:layout_height="match_parent"/>
 
             <com.example.baity.Designs.MyEditTextNormal
-                android:id="@+id/edtEmail"
-                android:layout_width="@dimen/_150sdp"
+                android:id="@+id/edtUemail"
+                android:layout_width="@dimen/_170sdp"
                 android:layout_height="@dimen/_30sdp"
                 android:layout_gravity="center"
                 android:background="@drawable/my_shape"
@@ -170,8 +170,8 @@
                 android:layout_height="match_parent"/>
 
             <com.example.baity.Designs.MyEditTextNormal
-                android:id="@+id/edtPhone"
-                android:layout_width="@dimen/_150sdp"
+                android:id="@+id/edtUphone"
+                android:layout_width="@dimen/_170sdp"
                 android:layout_height="@dimen/_30sdp"
                 android:layout_gravity="center"
                 android:background="@drawable/my_shape"
