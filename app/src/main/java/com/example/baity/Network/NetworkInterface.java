@@ -1,9 +1,11 @@
 package com.example.baity.Network;
 
+import com.example.baity.Model.About_us_response;
 import com.example.baity.Model.AdModel;
 import com.example.baity.Model.Change_password_request;
 import com.example.baity.Model.Child_model;
 import com.example.baity.Model.Child_resault_model;
+import com.example.baity.Model.Contact_us_response;
 import com.example.baity.Model.EditProfile_request;
 import com.example.baity.Model.EditProfile_response;
 import com.example.baity.Model.Facebook_request;
@@ -21,11 +23,14 @@ import com.example.baity.Model.Home_slider_model;
 import com.example.baity.Model.LoginRequest;
 import com.example.baity.Model.LoginResponse;
 import com.example.baity.Model.MyFavouriteModel;
+import com.example.baity.Model.Prayer;
 import com.example.baity.Model.Rate_response;
 import com.example.baity.Model.Rating_model;
 import com.example.baity.Model.Review_full_model;
 import com.example.baity.Model.Search_model;
 import com.example.baity.Model.Sub_parent_model;
+import com.example.baity.Model.Sug_response;
+import com.example.baity.Model.Suggestion_request;
 import com.example.baity.Model.Ver_change_pass_request;
 import com.example.baity.Model.Ver_change_pass_response;
 import com.example.baity.Model.Verify_request;
@@ -104,9 +109,25 @@ public interface NetworkInterface {
     @GET("myfavourite")
     Observable<List<MyFavouriteModel>> GetFavourite();
 
-    @GET("api/Account/TokenFromFacebook")
+    @POST("api/Account/TokenFromFacebook")
     Observable<Facebook_response> FacebookLoginn(@Body Facebook_request facebook_request);
 
-    @GET("api/Account/TokenFromFacebook")
+    @POST("api/Account/TokenFromFacebook")
     Observable<Google_response> GoogleLoginn(@Body Google_request google_request);
+
+    @GET("AboutUs")
+    Observable<About_us_response> GetAboutDes();
+
+    @GET("contactus")
+    Observable<Contact_us_response> GetContactUs();
+
+    @POST("suggest")
+    Observable<Sug_response> SaveSug(@Body Suggestion_request suggestion_request);
+
+    @GET("v1/calendar")
+    Observable<Prayer> getTiming(@Query("latitude") Double latitude,
+                                 @Query("longitude") Double longitude,
+                                 @Query("method") Integer method,
+                                 @Query("month") Integer month,
+                                 @Query("year") Integer year);
 }

@@ -82,6 +82,32 @@ public class LoginPresenter {
         Constant.handleErrors(throwable,context);
     }
 
+    public void Twitterlogin(String Username, String email) {
+        showLoadingDialog();
+        Facebook_request facebook_request = new Facebook_request(Username, email);
+        mSubscriptions.add(NetworkUtil.getRetrofitNoHeader()
+                .FacebookLoginn(facebook_request)
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(Schedulers.io())
+                .subscribe(this::handleResponseTwitter, this::handleErrorTwitter));
+    }
+
+    private void handleErrorTwitter(Throwable throwable) {
+        alertDialog.dismiss();
+        Constant.handleErrors(throwable,context);
+    }
+
+    private void handleResponseTwitter(Facebook_response facebook_response) {
+        alertDialog.dismiss();
+        String Token = facebook_response.getToken();
+        preferences.saveToken(context,Token);
+        preferences.Save_User_State(context,"oUser");
+        Intent intent = new Intent(context, Home.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        context.startActivity(intent);
+    }
+
+
     public void Googlelogin(String Username, String email) {
         showLoadingDialog();
         Facebook_request facebook_request = new Facebook_request(Username, email);

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Baity</string>
     <string name="sign_up">Sign Up</string>
     <string name="first_name">First Name</string>
@@ -85,7 +85,41 @@ to make a type specimen book\n It has survived not only five \n centuries but al
         <item>Angola</item>
     </string-array>
 
-    <string name="facebook_app_id">124169602308128</string>
-    <string name="fb_login_protocol_scheme">53/I+okujUbsMEK4WMFFRgDIm9s=</string>
+    <string name="facebook_app_id">495225944720667</string>
+    <string name="fb_login_protocol_scheme">fb495225944720667</string>
+    <string name="glade_to_reseve_your_suggestion">Glade to reseve your suggestion</string>
 
+    <string name="com.twitter.sdk.android.CONSUMER_KEY" tools:ignore="ExtraTranslation">sgAKcmzGTh4PHilwzzFP47eDj</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET" tools:ignore="ExtraTranslation">33bE3VNVxT1O51Tj4eJdSyyu0S8rKUsQvFhTCwQQaeX7nro35G</string>
+    <string name="qibla">Qibla</string>
+    <string name="compass_and_prayer_times">Compass and prayer times</string>
+    <string name="gps_settings_title">aaaa</string>
+    <string name="gps_settings_text">ssss</string>
+    <string name="settings_button_ok">ok</string>
+    <string name="settings_button_cancel">cancel</string>
+    <string-array name="numbers">
+        <item>Key</item>
+        <item>+965</item>
+        <item>+974</item>
+        <item>+966</item>
+        <item>+212</item>
+        <item>+971</item>
+        <item>+973</item>
+        <item>+968</item>
+        <item>+926</item>
+        <item>+20</item>
+        <item>+963</item>
+        <item>+216</item>
+        <item>+218</item>
+        <item>+970</item>
+        <item>+213</item>
+        <item>+222</item>
+        <item>+961</item>
+        <item>+249</item>
+        <item>+964</item>
+        <item>+967</item>
+        <item>+253</item>
+        <item>+252</item>
+        <item>+269</item>
+    </string-array>
 </resources>

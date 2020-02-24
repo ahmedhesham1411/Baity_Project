@@ -4,14 +4,19 @@ import androidx.appcompat.widget.AppCompatImageView;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Base64;
 import android.util.Patterns;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.FrameLayout;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -33,7 +38,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import static android.graphics.Color.RED;
 import static com.basgeekball.awesomevalidation.ValidationStyle.COLORATION;
 
-public class SignUp extends BaseActivity {
+public class SignUp extends BaseActivity implements AdapterView.OnItemSelectedListener {
     private RegisterPresenter registerPresenter;
     AppCompatImageView btnBack;
     MyEditTextNormal firstName,lastName,email,phone,password,confirmPassword;
@@ -43,7 +48,8 @@ public class SignUp extends BaseActivity {
     private AwesomeValidation awesomeValidation;
     MyButtonBold signUp;
     BottomSheetDialog bottomSheetDialog;
-    String myImage;
+    String myImage,Spinnertext;
+    Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -130,6 +136,13 @@ public class SignUp extends BaseActivity {
                 bottomSheetDialog.dismiss();
             }
         });
+
+        spinner = findViewById(R.id.spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.numbers, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
     }
 
     private void addValidationToViews() {
@@ -200,7 +213,7 @@ public class SignUp extends BaseActivity {
                 myImage = Preferences.getImageToPreference(this);
                 registerPresenter.register(firstName.getText().toString(),
                         lastName.getText().toString(),
-                        phone.getText().toString(),
+                        Spinnertext+phone.getText().toString(),
                         email.getText().toString(),
                         password.getText().toString(),
                         confirmPassword.getText().toString(),
@@ -209,6 +222,31 @@ public class SignUp extends BaseActivity {
         }
     }
 
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        Spinnertext = parent.getItemAtPosition(position).toString();
+        //Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+        setSpinText(spinner,Spinnertext);
+        ((TextView) parent.getChildAt(0)).setTextColor(Color.WHITE);
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
+
+    public void setSpinText(Spinner spin, String text)
+    {
+        for(int i= 0; i < spin.getAdapter().getCount(); i++)
+        {
+            if(spin.getAdapter().getItem(i).toString().contains(text))
+            {
+                spin.setSelection(i);
+            }
+        }
+
+    }
 }
 
 

@@ -7,6 +7,7 @@ import android.os.Handler;
 import com.example.baity.Activities.Home.Home;
 import com.example.baity.Activities.Login.LogIn;
 import com.example.baity.R;
+import com.example.baity.Services.PusherService;
 import com.example.baity.Utils.Preferences;
 
 import pl.droidsonroids.gif.GifImageView;
@@ -24,6 +25,8 @@ public class SplashScreen extends BaseActivity  {
         setContentView(R.layout.activity_splash_screen);
 
         getLanguagePref(this);
+
+        startService( new Intent( this, PusherService. class )) ;
 
         gifImageView = findViewById(R.id.gifImageView);
         Token = preferences.GetToken(this);

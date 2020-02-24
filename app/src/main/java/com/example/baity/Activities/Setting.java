@@ -6,12 +6,16 @@ import androidx.appcompat.widget.LinearLayoutCompat;
 
 import android.content.Context;
 import android.content.Intent;
+import android.location.LocationManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.baity.Activities.About_us.About_us;
 import com.example.baity.Activities.Change_password.Change_password;
+import com.example.baity.Activities.Contact_us.Contact_Us;
 import com.example.baity.Activities.Login.LogIn;
 import com.example.baity.Activities.MyFavourite.My_favourite;
 import com.example.baity.Activities.Profile.MyProfile;
@@ -28,7 +32,7 @@ import static com.example.baity.Activities.LocaleManeger.ARABIC;
 public class Setting extends BaseActivity {
     BottomSheetDialog bottomSheetDialog;
     AppCompatImageView backBtn;
-    MyTextViewBold myProfile,aboutUs,contactUs,changeLanguage,changePassword,terms_and_conditions,myFavourite,logOut;
+    MyTextViewBold myProfile,aboutUs,contactUs,changeLanguage,changePassword,terms_and_conditions,myFavourite,logOut,Qibla;
     LinearLayoutCompat layout_popup;
     MyButtonBold btnYes,btnNo;
     Preferences preferences;
@@ -47,12 +51,17 @@ public class Setting extends BaseActivity {
         changePassword = findViewById(R.id.change_password);
         terms_and_conditions = findViewById(R.id.terms_and_conditions);
         myFavourite = findViewById(R.id.my_favourirte);
+        Qibla = findViewById(R.id.Qibla);
         logOut = findViewById(R.id.logOut);
 
         String userState = preferences.Get_User_State(this);
         if (userState.equals("oUser")){
             myProfile.setVisibility(View.GONE);
             changePassword.setVisibility(View.GONE);
+        }
+        else if (userState.equals("mUser")){
+            myProfile.setVisibility(View.VISIBLE);
+            changePassword.setVisibility(View.VISIBLE);
         }
 
         changeLanguage.setOnClickListener(new View.OnClickListener() {
@@ -74,7 +83,7 @@ public class Setting extends BaseActivity {
         aboutUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),About_us.class);
+                Intent intent = new Intent(getApplicationContext(), About_us.class);
                 startActivity(intent);
             }
         });
@@ -82,7 +91,7 @@ public class Setting extends BaseActivity {
         contactUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Contact_Us.class);
+                Intent intent = new Intent(getApplicationContext(), Contact_Us.class);
                 startActivity(intent);
             }
         });
@@ -128,6 +137,20 @@ public class Setting extends BaseActivity {
             }
         });
 
+        Qibla.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+                if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
+                    onGPS();
+                }
+                else {
+                    Intent intent = new Intent(getApplicationContext(), com.example.baity.Activities.Qibla.Qibla.class);
+                    startActivity(intent);
+                }
+
+            }
+        });
         //Bottom sheet
         bottomSheetDialog = new BottomSheetDialog(this);
         final View bottomSheetDialogView = getLayoutInflater().inflate(R.layout.popup_button, null);
@@ -198,5 +221,17 @@ public class Setting extends BaseActivity {
         LocaleManeger.setNewLocale(getApplicationContext(), language);
         Intent intent = this.getIntent();
         startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
+    }
+
+    private void onGPS() {
+
+        final AlertDialog.Builder builder= new AlertDialog.Builder(this);
+
+        builder.setMessage("Enable GPS").setCancelable(false).setPositiveButton("YES",
+                (dialog, which) -> startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS))).setNegativeButton(
+                "NO", (dialog, which) -> dialog.cancel());
+        final AlertDialog alertDialog=builder.create();
+        alertDialog.show();
+
     }
 }

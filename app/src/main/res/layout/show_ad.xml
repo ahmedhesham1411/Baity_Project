@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/imageAd"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        android:src="@drawable/dddd"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="@dimen/_25sdp"

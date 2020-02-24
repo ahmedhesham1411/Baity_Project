@@ -21,6 +21,15 @@
             android:layout_marginTop="@dimen/_12sdp"/>
 
 
+        <com.example.baity.Designs.MyTextViewBold
+            android:id="@+id/islamicDate"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:text="10.10.2020"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -164,6 +173,7 @@
             android:textAllCaps="false"
             android:layout_marginBottom="@dimen/_35sdp"
             android:layout_marginEnd="@dimen/_10sdp"
+            android:visibility="gone"
             />
 
     </androidx.appcompat.widget.LinearLayoutCompat>

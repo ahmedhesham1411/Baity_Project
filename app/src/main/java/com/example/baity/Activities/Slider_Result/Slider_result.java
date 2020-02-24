@@ -24,8 +24,11 @@ import com.example.baity.Model.AdModel;
 import com.example.baity.Model.Sub_parent_model;
 import com.example.baity.R;
 import com.example.baity.Utils.Preferences;
+import com.github.msarhan.ummalqura.calendar.UmmalquraCalendar;
 
+import java.util.Calendar;
 import java.util.List;
+import java.util.Locale;
 
 public class Slider_result extends BaseActivity implements Sub_resault_interface{
     Slider_resault_presenter slider_resault_presenter;
@@ -37,6 +40,8 @@ public class Slider_result extends BaseActivity implements Sub_resault_interface
     Preferences preferences;
     String adImage,image;
     AppCompatImageView image_ad,MainImage;
+    String day,month,year;
+    MyTextViewBold islamicDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +55,14 @@ public class Slider_result extends BaseActivity implements Sub_resault_interface
         settingBtn = findViewById(R.id.settingBtn);
         backBtn = findViewById(R.id.btnBack);
         MainImage = findViewById(R.id.aaaaaaaaaaa);
+        islamicDate = findViewById(R.id.islamicDate);
+
+        Calendar cal = new UmmalquraCalendar();
+        day = String.valueOf(cal.get(Calendar.DAY_OF_MONTH)); // 11
+        month = String.valueOf(cal.getDisplayName(Calendar.MONTH, Calendar.LONG,new Locale("ar")));
+        year = String.valueOf(cal.get(Calendar.YEAR));
+        islamicDate.setText(day + " " + month  + " " + year);
+
 
         String name = preferences.GetMainCaName(this);
         image = preferences.GetMainCaImage(this);

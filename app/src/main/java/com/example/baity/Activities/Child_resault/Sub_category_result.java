@@ -27,11 +27,14 @@ import com.example.baity.Model.AdModel;
 import com.example.baity.Model.Child_resault_model;
 import com.example.baity.R;
 import com.example.baity.Utils.Preferences;
+import com.github.msarhan.ummalqura.calendar.UmmalquraCalendar;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class Sub_category_result extends AppCompatActivity implements Child_resault_interface {
     Child_resault_presenter child_resault_presenter;
@@ -45,6 +48,9 @@ public class Sub_category_result extends AppCompatActivity implements Child_resa
     private VideoView vv;
     private MediaController mediacontroller;
     private Uri uri;
+    MyTextViewBold islamicDate;
+    String day,month,year;
+
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +62,13 @@ public class Sub_category_result extends AppCompatActivity implements Child_resa
         child_resault_presenter.GetAd();
         showAdDialog();
         Token = preferences.GetToken(this);
+
+        islamicDate = findViewById(R.id.islamicDate);
+        Calendar cal = new UmmalquraCalendar();
+        day = String.valueOf(cal.get(Calendar.DAY_OF_MONTH)); // 11
+        month = String.valueOf(cal.getDisplayName(Calendar.MONTH, Calendar.LONG,new Locale("ar")));
+        year = String.valueOf(cal.get(Calendar.YEAR));
+        islamicDate.setText(day + " " + month  + " " + year);
 
         Gson gson = new Gson();
         String json = preferences.Get_listt(this);

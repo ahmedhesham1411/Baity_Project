@@ -22,6 +22,7 @@ public class NetworkUtil {
         Gson gson = new GsonBuilder()
                 .setLenient()
                 .create();
+
         return new Retrofit.Builder()
                 .baseUrl(Constant.BASEURL)
                 .addCallAdapterFactory(rxAdapter)
@@ -57,6 +58,21 @@ public class NetworkUtil {
                 .client(httpClient.build())
                 .addCallAdapterFactory(rxAdapter)
                 .addConverterFactory(GsonConverterFactory.create())
+                .build().create(NetworkInterface.class);
+    }
+
+    public static  String BASEExternalURL = "http://api.aladhan.com/";
+    public static NetworkInterface getRetrofittNoHeader() {
+
+        RxJavaCallAdapterFactory rxAdapter = RxJavaCallAdapterFactory.createWithScheduler(Schedulers.io());
+
+        Gson gson = new GsonBuilder()
+                .setLenient()
+                .create();
+        return new Retrofit.Builder()
+                .baseUrl(BASEExternalURL)
+                .addCallAdapterFactory(rxAdapter)
+                .addConverterFactory(GsonConverterFactory.create(gson))
                 .build().create(NetworkInterface.class);
 
     }

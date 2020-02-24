@@ -28,13 +28,16 @@ import com.example.baity.Model.AdModel;
 import com.example.baity.Model.Child_model;
 import com.example.baity.R;
 import com.example.baity.Utils.Preferences;
+import com.github.msarhan.ummalqura.calendar.UmmalquraCalendar;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import com.smarteist.autoimageslider.SliderView;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
+import java.util.Locale;
 
 
 public class Sub_category extends AppCompatActivity implements Sub_child_interface {
@@ -47,6 +50,9 @@ public class Sub_category extends AppCompatActivity implements Sub_child_interfa
     AppCompatImageView image_ad,favoriteBtn,settingBtn;
     String adImage;
     int company_id;
+    MyTextViewBold islamicDate;
+    String day,month,year;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +61,12 @@ public class Sub_category extends AppCompatActivity implements Sub_child_interfa
         sub_category_presenter = new Sub_category_presenter(this,this);
         sub_category_presenter.GetAd();
         showAdDialog();
+        islamicDate = findViewById(R.id.islamicDate);
+        Calendar cal = new UmmalquraCalendar();
+        day = String.valueOf(cal.get(Calendar.DAY_OF_MONTH)); // 11
+        month = String.valueOf(cal.getDisplayName(Calendar.MONTH, Calendar.LONG,new Locale("ar")));
+        year = String.valueOf(cal.get(Calendar.YEAR));
+        islamicDate.setText(day + " " + month  + " " + year);
 
         Gson gson = new Gson();
         String json = preferences.Get_listt(this);

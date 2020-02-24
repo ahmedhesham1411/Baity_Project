@@ -165,13 +165,27 @@
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
-            <androidx.appcompat.widget.AppCompatImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/twitter_image"
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/twitterbtn"
-                android:visibility="gone"/>
+                android:layout_height="wrap_content">
+
+                <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="gone"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/twitter_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/twitterbtn"
+                    android:visibility="visible"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
 
 
             <androidx.appcompat.widget.LinearLayoutCompat

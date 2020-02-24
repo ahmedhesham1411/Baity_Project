@@ -207,10 +207,10 @@ public class Home extends BaseActivity implements Home_interface {
     @Override
     public void sendAd(AdModel adModel) {
         AdModel adModel1 = adModel;
-        adImage = adModel1.getImagepath();
+        /*adImage = adModel1.getImagepath();
         Bitmap decodeTxt=decodeBase64(adImage);
         image_ad.setImageBitmap(decodeTxt);
-        company_id = adModel.getCompany_id();
+        company_id = adModel.getCompany_id();*/
 
     }
 

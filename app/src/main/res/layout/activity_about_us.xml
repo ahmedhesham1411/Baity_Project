@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.About_us"
+    tools:context=".Activities.About_us.About_us"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -70,7 +70,8 @@
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textSize="@dimen/_16ssp"/>
+            android:textSize="@dimen/_16ssp"
+            android:id="@+id/About_des"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 </FrameLayout>

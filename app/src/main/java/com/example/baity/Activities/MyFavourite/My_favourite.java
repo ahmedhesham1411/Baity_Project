@@ -45,7 +45,6 @@ public class My_favourite extends BaseActivity implements My_Favourite_Interface
 
     @Override
     public void sendFavourite(List<MyFavouriteModel> myFavouriteModels) {
-        List<MyFavouriteModel> myFavouriteModels1 = myFavouriteModels;
         recyclerView = findViewById(R.id.favourite_recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
