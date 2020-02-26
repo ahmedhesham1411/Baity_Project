@@ -146,7 +146,7 @@ public class PusherService extends Service {
                 notificationBuilder.setAutoCancel(true)
                         .setDefaults(Notification.DEFAULT_ALL)
                         .setWhen(System.currentTimeMillis())
-                        .setSmallIcon(R.mipmap.iconnnn)
+                        .setSmallIcon(R.drawable.baity_not)
                         .setTicker("Hearty365")
                         .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                         .setContentIntent(pendingIntent)

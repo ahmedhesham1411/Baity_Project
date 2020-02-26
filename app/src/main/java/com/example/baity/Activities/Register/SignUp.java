@@ -124,7 +124,6 @@ public class SignUp extends BaseActivity implements AdapterView.OnItemSelectedLi
         btnCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(intent,0);
                 bottomSheetDialog.dismiss();
