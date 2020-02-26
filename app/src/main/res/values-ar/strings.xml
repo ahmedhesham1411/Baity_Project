@@ -1,49 +1,49 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Baity</string>
-    <string name="sign_up">تسجيل</string>
+    <string name="sign_up">تسجيل الدخول </string>
     <string name="first_name">الاسم الاول</string>
     <string name="last_name">الاسم الاخير</string>
-    <string name="email">البري الالكترونى</string>
-    <string name="phone_number">رقم الموبايل</string>
-    <string name="password">كلمة السر</string>
-    <string name="confirm_password">تأكيد كلمة السر</string>
-    <string name="sign_in">دخول</string>
-    <string name="user_name">اسم المستخددم</string>
-    <string name="type_your_user_name">اكتب اسم المستخدم</string>
-    <string name="login">دخول</string>
-    <string name="forgot_password"> نسيت كلمة السر ؟</string>
-    <string name="verification_code">كود التأكيد</string>
-    <string name="enter_your_code">ادخل الكود</string>
+    <string name="email">البريد الالكترونى</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="type_your_user_name">اسم المستخدم</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="forgot_password">هل نسيت كلمة المرور ؟</string>
+    <string name="verification_code">رمز التأكيد</string>
+    <string name="enter_your_code">ادخل الرمز</string>
     <string name="verify">تأكيد</string>
     <string name="your_account_has_been_verified">تم تأكيد الحساب</string>
-    <string name="Verification_code">كود التأكيد</string>
-    <string name="Verificationcode">كود التأكيد</string>
-    <string name="Enter_your_code">ادخل الكود</string>
-    <string name="description">وصف</string>
+    <string name="Verification_code">رمز التأكيد</string>
+    <string name="Verificationcode">رمز التأكيد</string>
+    <string name="Enter_your_code">ادخل الرمز</string>
+    <string name="description">الوصف</string>
     <string name="home_description">المقاولات العامة ومواد البناء</string>
-    <string name="my_profile">حسابى</string>
+    <string name="my_profile">الملف الشخصى</string>
     <string name="about_us">عن الشركة</string>
     <string name="my_favorite">مفضلاتى</string>
-    <string name="change_password">تغيير كلمة السر</string>
+    <string name="change_password">تغيير كلمة المرور</string>
     <string name="change_language">تغيير اللغة</string>
     <string name="terms_and_conditions">الشروط و الاحكام</string>
     <string name="logout">تسجيل الخروج</string>
     <string name="about_descriptio"> ما هو لوريم ايبسوم ؟  \n  لوريم ايبسوم هو نموذج افتراضي  \n يوضع في التصاميم لتعرض على العميل  \n  ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص \n من التصميم ويتم وضع النصوص النهائية\n  المطلوبة للتصميم ويقول البعض ان وضع \n النصوص التجريبية بالتصميم قد تشغل  \n المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.  </string>
-    <string name="setting">اعدادات</string>
+    <string name="setting">الإعدادات</string>
     <string name="contact_us">اتصل بنا</string>
     <string name="www_baity_com">www.Baity.com</string>
     <string name="_01111111111">01111111111</string>
-    <string name="ektrahat">سعداء لتلقى اقتراحاتك</string>
+    <string name="ektrahat">نحن سعداء لتلقى اقتراحاتك</string>
     <string name="arabic">عربى</string>
-    <string name="mobile_number">رقم الموبايل</string>
-    <string name="reset">استرجاع</string>
-    <string name="reset_password">استرجاع كلمة السر</string>
-    <string name="forget_password">نسيت كلمة السر</string>
-    <string name="new_password">كلمة السر</string>
-    <string name="confirm_new_password">تأكيد كلمة السر</string>
+    <string name="mobile_number">رقم الهاتف</string>
+    <string name="reset">إعادة تعيين</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="forget_password">هل نسيت كلمة المرور ؟</string>
+    <string name="new_password">كلمة المرور</string>
+    <string name="confirm_new_password">تأكيد كلمة المرور</string>
     <string name="submit">تأكيد</string>
-    <string name="old_password">كلمة السر القديمة</string>
-    <string name="change_pssword_succesfully">تم تغيير كلمة السر</string>
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="change_pssword_succesfully">تم تغيير كلمة المرور</string>
     <string name="done">تم</string>
     <string name="reset_password_succesfully">تم</string>
     <string name="what_is_lorem_ipsum"> ما هو لوريم ايبسوم ؟</string>
@@ -52,15 +52,15 @@
     <string name="yes">نعم</string>
     <string name="save">حفظ</string>
     <string name="english">عربى</string>
-    <string name="type_your_password">اكتب كلمة السر</string>
+    <string name="type_your_password">اكتب كلمة المرور</string>
     <string name="or_n_sign_up_using">او \n تسجيل الدخول باستخدام</string>
     <string name="don_t_have_an_account_n_signup">ليس لديك حساب ؟ \n تسجيل الدخول</string>
     <string name="i_agree_to_baity_s_terms_of_use">أوافق على الشروط و الاحكام</string>
     <string name="nameerror">الاسم غير صحيح</string>
     <string name="emailerror">الايميل غير صحيح</string>
     <string name="passworderror">لا تقل عن 8 احرف</string>
-    <string name="mobileerror">رقم غير صحيح</string>
-    <string name="match_password">كلمة سر غير صحيحة</string>
+    <string name="mobileerror">رقم الهاتف غير صحيح</string>
+    <string name="match_password">كلمة المرور غير صحيحة</string>
     <string name="are_you_sure_you_want_to_log_out">تسجيل الخروج ؟</string>
     <string name="not_now">ليس الان</string>
     <string name="rate">تقييم</string>
@@ -69,7 +69,7 @@
     <string name="choose_a_picture">اختر صورة</string>
     <string name="search">بحث</string>
     <string name="image_source">مصدر الصورة</string>
-    <string name="cancel">الغاء</string>
+    <string name="cancel">إلغاء</string>
     <string name="edit">تعديل</string>
     <string name="add">حفظ</string>
     <string name="please_choose_an_image_source">اختر مصدر الصورة</string>
@@ -77,7 +77,7 @@
 
     <string name="facebook_app_id">124169602308128</string>
     <string name="fb_login_protocol_scheme">53/I+okujUbsMEK4WMFFRgDIm9s=</string>
-    <string name="glade_to_reseve_your_suggestion">سعداء لتلقى اقتراحك</string>
+    <string name="glade_to_reseve_your_suggestion">نحن سعداء لتلقى اقتراحك</string>
 
     <string name="com.twitter.sdk.android.CONSUMER_KEY" tools:ignore="ExtraTranslation">sgAKcmzGTh4PHilwzzFP47eDj</string>
     <string name="com.twitter.sdk.android.CONSUMER_SECRET" tools:ignore="ExtraTranslation">33bE3VNVxT1O51Tj4eJdSyyu0S8rKUsQvFhTCwQQaeX7nro35G</string>
@@ -85,8 +85,8 @@
     <string name="compass_and_prayer_times">القبلة و مواقيت الصلاة</string>
     <string name="gps_settings_title">aaaa</string>
     <string name="gps_settings_text">ssss</string>
-    <string name="settings_button_ok">ok</string>
-    <string name="settings_button_cancel">cancel</string>
+    <string name="settings_button_ok">تم</string>
+    <string name="settings_button_cancel">إلغاء</string>
     <string-array name="numbers">
         <item>مفتاح</item>
         <item>+965</item>
