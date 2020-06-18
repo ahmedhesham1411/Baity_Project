@@ -12,4 +12,9 @@ Screenshots
 
 | Sub category | Details  | Details | Reviews
 | ------------- | ------------- | ------------- | -------------
-| ![iPhone X-XS-11 Pro – 16](https://user-images.githubusercontent.com/50178221/84968372-9aa31f80-b116-11ea-8151-481ca64340d5.png)  | ![iPhone X-XS-11 Pro – 17](https://user-images.githubusercontent.com/50178221/84968412-b7d7ee00-b116-11ea-8498-b7e1b7326ab7.png)  | ![iPhone X-XS-11 Pro – 1](https://user-images.githubusercontent.com/50178221/84968437-c6260a00-b116-11ea-9eeb-344925069ea4.png) | ![iPhone X-XS-11 Pro – 11](https://user-images.githubusercontent.com/50178221/84968340-8d863080-b116-11ea-9866-bc51baa729c4.png)
+| ![iPhone X-XS-11 Pro – 16](https://user-images.githubusercontent.com/50178221/84968372-9aa31f80-b116-11ea-8151-481ca64340d5.png)  | ![iPhone X-XS-11 Pro – 17](https://user-images.githubusercontent.com/50178221/84968412-b7d7ee00-b116-11ea-8498-b7e1b7326ab7.png)  | ![iPhone X-XS-11 Pro – 1](https://user-images.githubusercontent.com/50178221/84968437-c6260a00-b116-11ea-9eeb-344925069ea4.png) | ![iPhone X-XS-11 Pro – 9](https://user-images.githubusercontent.com/50178221/84968544-04bbc480-b117-11ea-9efe-ee290a4b46b0.png)
+
+
+| Rate | Profile  
+| ------------- | -------------
+| ![iPhone X-XS-11 Pro – 8](https://user-images.githubusercontent.com/50178221/84968601-32a10900-b117-11ea-8d79-5f887bdfe6fb.png) | ![iPhone X-XS-11 Pro – 10](https://user-images.githubusercontent.com/50178221/84968614-3c2a7100-b117-11ea-92b0-cc27dfd32c87.png)
